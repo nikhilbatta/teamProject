@@ -22,7 +22,7 @@ Given the ingredients array is not empty
 Then a list of recipes is returned sorted by # of matches to ingredients array
 
 Scenario: User selects a recipe
-When a user selects a recipe to cook from the diplayed list
+When a user selects a recipe to cook from the displayed list
 Given The recipe exists in our DB or in API
 Then recipe saved as our 'active' recipe. ingredients are added to shopping list.
 
@@ -38,24 +38,32 @@ Then the user can mark that the ingredient will be brought by which person
 
 Scenario: user can claim item from list for recipes
 When an item is needed for a recipe
-Give th
+Give the item is in the shared foods array (as determined by user) and the shopping list exists
+Then the user can edit the item
 
-
+Scenario: A user wants modify an ingredient in the shared food list
+When a user clicks on an ingredient
+Given the ingredient is in the shared food list
+Then the user can mark that the ingredient as claimed or remove
 
 
 ## Setup/Installation Requirements
 
-none
+TBD
 
 ## Known Bugs
 
-_None_
+TBD
 
 ## Support and contact details
 
 _contact Ethan Samuels-Ellingson at ethansamuelsellingson@gmail.com _
 
+TBD
+
 ## Technologies Used
+
+TBD
 
 _JavaScript with some ES6 features_
 
