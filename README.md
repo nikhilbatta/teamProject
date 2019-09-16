@@ -16,6 +16,11 @@ When a user enters an ingredient and clicks "share"
 Given the input is valid
 Then the ingredient is added to the array and immediately displayed
 
+Scenario:user constructs an array of ingredients to search for recipes
+When a user clicks ingredients in shared ingredients or recommendations or type in to input box
+Given there are things for the user to click on
+Then make a search with all the selected ingredients and display results
+
 Scenario: User searches for recipes
 When a user makes a search
 Given the ingredients array is not empty
